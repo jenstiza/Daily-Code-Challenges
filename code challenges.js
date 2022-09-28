@@ -46,8 +46,16 @@ function sayHello() {
   -----------------------------------------------------------------*/
   // Your solution for 02-addTwoNumbers here:
   
+  function addTwoNumbers(num1,num2){
+    if(typeof num1 === 'number' && typeof num2 === 'number'){
+      return num1 + num2;
+    } else {
+      return NaN;
+    }
+  }
   
-  
+  console.log(addTwoNumbers(5,10));
+  console.log(addTwoNumbers("hello",3))
   
   
   /*-----------------------------------------------------------------
