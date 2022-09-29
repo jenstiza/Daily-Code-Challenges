@@ -73,7 +73,13 @@ function sayHello() {
   // Your solution for 03-sumNumbers here:
   
   
-  
+  function sumNumbers(nums) {
+    let total = 0; 
+    nums.forEach(function(num){
+      total += num; 
+    })
+    return total;
+  }
   
   
   /*-----------------------------------------------------------------
@@ -91,7 +97,9 @@ function sayHello() {
   // Your solution for 04-addList here:
   
   
-  
+  function addList(...nums) {
+    return nums.reduce((sum,num) => sum + num, 0);
+  }
   
   
   /*-----------------------------------------------------------------
