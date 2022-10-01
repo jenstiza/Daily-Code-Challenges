@@ -118,7 +118,11 @@ function sayHello() {
   // Your solution for 05-computeRemainder:
   
   
-  
+  function computeRemainder(dividend, divisor) {
+    if (divisor === 0) return Infinity;
+    return dividend % divisor; 
+    
+  }
   
   
   /*-----------------------------------------------------------------
