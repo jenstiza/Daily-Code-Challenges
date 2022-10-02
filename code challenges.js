@@ -139,7 +139,16 @@ function sayHello() {
   -----------------------------------------------------------------*/
   // Your solution for 06-range here:
   
-  
+  let range = function (min,max){
+    let array = [];
+    if(min > max) 
+      return "First argument must be less than second";
+    
+      for(let i = min; i < max; i++){
+      array.push(i);
+    }
+    return array
+  }
   
   
   
