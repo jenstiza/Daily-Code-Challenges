@@ -162,7 +162,14 @@ function sayHello() {
   -----------------------------------------------------------------*/
   // Your solution for 07-reverseUpcaseString here:
   
-  
+  function reverseUpcaseString (str) {
+    let mirror = '';
+      for (let i = str.length -1; i >= 0; i--) {
+        let letter = str[i];
+        mirror += letter.toUpperCase();
+      }
+      return mirror;
+  }
   
   
   
