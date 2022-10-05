@@ -205,7 +205,14 @@ function sayHello() {
   -----------------------------------------------------------------*/
   // Your solution for 09-charCount here:
   
-  
+  function charCount(str) {
+    let newObj = {};
+    for(letter of str) {
+      if(!newObj[letter]) newObj[letter] = 1;
+      else newObj[letter]++;
+    }
+    return newObj;
+  };
   
   
   
