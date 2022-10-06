@@ -234,7 +234,14 @@ function sayHello() {
   // Your solution for 10-formatWithPadding here:
   
   
-  
+  function formatWithPadding (num,str,length) {
+    num = num + "";
+    while (num.length < length) {
+      num = str + num;
+    }
+    return num;
+    
+  }
   
   
   /*-----------------------------------------------------------------
