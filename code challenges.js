@@ -260,7 +260,10 @@ function sayHello() {
   -----------------------------------------------------------------*/
   // Your solution for 11-isPalindrome here:
   
-  
+  let isPalindrome = function(str) {
+    let cleanedUpString = str.replace(/[^a-zA-Z0-9]+/g, "").toLowerCase();
+    return cleanedUpString.split("").reverse().join("") === cleanedUpString
+};
   
   
   
