@@ -283,7 +283,17 @@ function sayHello() {
   -----------------------------------------------------------------*/
   // Your solution for 12-hammingDistance here:
   
-  
+  const hammingDistance = (str1 = '', str2 = '') => {
+    if (str1.length !== str2.length)  return NaN;
+    
+    let count = 0;
+    for (let i = 0; i < str1.length; i += 1) {
+       if (str1[i] !== str2[i]) {
+          count += 1;
+       }
+    }
+    return count;
+ };
   
   
   
