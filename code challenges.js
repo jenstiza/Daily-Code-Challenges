@@ -311,7 +311,13 @@ function sayHello() {
   mumble('!A 2'); //=> '!-AA-   -2222'
   -----------------------------------------------------------------*/
   // Your solution for 13-mumble here:
-  
+  function mumble(str) {
+    let result = '';
+    for(let i = 0; i < str. length; i++) {
+      result += ((i || '') && '-') + str.charAt(i).repeat(i+1);
+    }
+    return result;
+  }
   
   
   
