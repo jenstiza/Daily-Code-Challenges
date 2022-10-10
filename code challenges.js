@@ -335,7 +335,15 @@ function sayHello() {
   -----------------------------------------------------------------*/
   // Your solution for 14-fromPairs here:
   
-  
+  function fromPairs(arr) {
+    let obj = {};
+    for (nestedArr of arr) {
+      let key = nestedArr[0];
+      let value = nestedArr[1];
+      obj[`${key}`] = value;
+    }
+    return obj;
+  }
   
   
   
