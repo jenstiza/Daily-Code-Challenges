@@ -361,7 +361,15 @@ function sayHello() {
   // Your solution for 15-mergeObjects here:
   
   
-  
+  function mergeObjects(...objects) {
+    let finalObj = objects[0];
+    for (obj of objects) {
+      for (const [key, value] of Object.entries(obj)) {
+        finalObj[key] = value;
+      }
+    }
+    return finalObj;
+  }
   
   
   /*-----------------------------------------------------------------
